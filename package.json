@@ -1,0 +1,28 @@
+{
+  "name": "WDIO5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "VisualAISuiteSolutionV1": "cross-env IsOriginalAppUrl=true useUFG=false wdio wdio.conf.js",
+    "VisualAISuiteSolutionV1-UFG": "cross-env IsOriginalAppUrl=true useUFG=true wdio wdio.conf.js",
+    "VisualAISuiteSolutionV2": "cross-env IsOriginalAppUrl=false useUFG=false wdio wdio.conf.js",
+    "VisualAISuiteSolutionV2-UFG": "cross-env IsOriginalAppUrl=false useUFG=true wdio wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@applitools/eyes-webdriverio": "^5.34.9",
+    "@wdio/cli": "^7.16.13",
+    "@wdio/local-runner": "^7.16.13",
+    "@wdio/mocha-framework": "^7.16.13",
+    "@wdio/spec-reporter": "^7.16.13",
+    "@wdio/sync": "^7.16.13",
+    "chai": "^4.3.4",
+    "chromedriver": "^97.0.0",
+    "cross-env": "^7.0.3",
+    "expect-webdriverio": "^3.1.4",
+    "wdio-chromedriver-service": "^7.2.6"
+  }
+}
